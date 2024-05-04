@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Additional CSS for dark mode theme */
+        body {
+            background-color: #212529; /* Dark background color */
+            color: #ffffff; /* Light text color */
+            font-family: Arial, sans-serif; /* Use a common font */
+        }
+        .container {
+            background-color: #1f1f1f; /* Dark container background color */
+            border-radius: 10px; /* Rounded corners for container */
+            padding: 40px; /* Increased padding inside the container */
+            margin-top: 50px; /* Add margin from top */
+            max-width: 400px; /* Set maximum width for the container */
+            margin-left: auto; /* Center container horizontally */
+            margin-right: auto; /* Center container horizontally */
+        }
+        #profileInfo {
+            margin-bottom: 20px; /* Add margin to profile info */
+            background-color: #343a40; /* Dark form input background color */
+            color: #ffffff; /* Form input text color */
+            border: 1px solid #6c757d; /* Form input border color */
+            border-radius: 5px; /* Rounded corners for input fields */
+            padding: 20px; /* Padding inside the profile info div */
+        }
+        #profileInfo input[type="text"],
+        #profileInfo input[type="text"],
+        #profileInfo input[type="email"],
+        #profileInfo input[type="tel"],
+        #profileInfo input[type="date"] {
+            background-color: transparent; /* Make input fields transparent */
+            border: none; /* Remove border from input fields */
+            border-bottom: 1px solid #6c757d; /* Add bottom border */
+            color: #ffffff; /* Text color */
+            margin-bottom: 20px; /* Add margin between input fields */
+            padding: 10px; /* Add padding inside input fields */
+            width: 100%; /* Set input fields to 100% width */
+        }
+        #profileInfo input[type="text"]::placeholder,
+        #profileInfo input[type="text"]::placeholder,
+        #profileInfo input[type="email"]::placeholder,
+        #profileInfo input[type="tel"]::placeholder,
+        #profileInfo input[type="date"]::placeholder {
+            color: #6c757d; /* Placeholder text color */
+        }
+        .btn-primary, .btn-danger, .btn-details {
+            width: 100%; /* Make buttons full width */
+            margin-top: 20px; /* Add space between buttons */
+            transition: all 0.3s ease; /* Smooth transition */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Blue button background color */
+            border-color: #007bff; /* Blue button border color */
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on button hover */
+            border-color: #0056b3; /* Darker blue border on button hover */
+        }
+        .btn-details {
+            background-color: #00f7ff; /* Blue button background color */
+            border-color: #00f7ff; /* Blue button border color */
+        }
+        .btn-details:hover {
+            background-color: #055ab4; /* Darker blue on button hover */
+            border-color: #055ab4; /* Darker blue border on button hover */
+        }
+        .btn-danger {
+            background-color: #dc3545; /* Red button background color */
+            border-color: #dc3545; /* Red button border color */
+        }
+        .btn-danger:hover {
+            background-color: #c82333; /* Darker red on button hover */
+            border-color: #c82333; /* Darker red border on button hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4">Profile</h2>
+        <div id="profileInfo">
+            <input type="text" id="username" placeholder="Username"><br>
+            <input type="text" id="name" placeholder="Name"><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <input type="tel" id="mobile" placeholder="Mobile Number"><br>
+            <input type="date" id="dob" placeholder="Date of Birth"><br>
+        </div>
+        <button id="saveProfile" class="btn btn-primary">Save</button>
+
+        <button id="logout" class="btn btn-danger">Logout</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../JS/profile.js"></script>
+</body>
+</html>
