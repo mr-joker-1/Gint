@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Additional CSS for dark mode theme */
+        body {
+            background-color: #292824;
+            color: #ffffff; /* Light text color */
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #343a40; /* Dark container background color */
+            border-radius: 10px; /* Rounded corners for container */
+            padding: 40px; /* Increased padding inside the container */
+            max-width: 400px; /* Set maximum width for the container */
+        }
+        label {
+            color: #ffffff; /* Label text color */
+        }
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent form input background color */
+            color: #ffffff; /* Form input text color */
+            border: none; /* No border */
+            border-bottom: 1px solid #ffffff; /* Bottom border */
+            border-radius: 0; /* No border radius */
+            margin-bottom: 20px; /* Space between form inputs */
+        }
+        .form-control:focus {
+            background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent background color on focus */
+            color: #ffffff; /* Text color on focus */
+            border-color: #ffffff; /* Border color on focus */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Blue button background color */
+            border: none; /* No border */
+            border-radius: 25px; /* Rounded button */
+            padding: 10px 20px; /* Padding */
+            width: 100%; /* Full width button */
+            transition: all 0.3s ease; /* Smooth transition */
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on button hover */
+            transform: translateY(-2px); /* Move button slightly up */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4">Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../JS/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Additional CSS for dark mode theme */
+        body {
+            background-color: #212529; /* Dark background color */
+            color: #ffffff; /* Light text color */
+            font-family: Arial, sans-serif; /* Use a common font */
+        }
+        .container {
+            background-color: #1f1f1f; /* Dark container background color */
+            border-radius: 10px; /* Rounded corners for container */
+            padding: 40px; /* Increased padding inside the container */
+            margin-top: 50px; /* Add margin from top */
+            max-width: 600px; /* Set maximum width for the container */
+            margin-left: auto; /* Center container horizontally */
+            margin-right: auto; /* Center container horizontally */
+        }
+        h2 {
+            text-align: center;
+        }
+        .details {
+            margin-bottom: 20px;
+            background-color: #343a40; /* Dark form input background color */
+            color: #ffffff; /* Form input text color */
+            border: 1px solid #6c757d; /* Form input border color */
+            border-radius: 5px; /* Rounded corners for input fields */
+            padding: 20px; /* Padding inside the profile info div */
+        }
+        .details label {
+            font-weight: bold;
+            color: #ffffff; /* Label text color */
+        }
+        .details p {
+            margin-bottom: 0;
+            color: #ffffff; /* Text color */
+        }
+        .btn-danger {
+            width: 100%; /* Make button full width */
+            margin-top: 20px; /* Add space between button and details */
+            transition: all 0.3s ease; /* Smooth transition */
+            background-color: #dc3545; /* Red button background color */
+            border-color: #dc3545; /* Red button border color */
+        }
+        .btn-danger:hover {
+            background-color: #c82333; /* Darker red on button hover */
+            border-color: #c82333; /* Darker red border on button hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Details</h2>
+        <div class="details">
+            <div id="output"></div>
+        </div>
+        <button id="logout" class="btn btn-danger">Logout</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JS/details.js"></script>
+</body>
+</html>
